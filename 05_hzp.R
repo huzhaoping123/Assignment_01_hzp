@@ -37,5 +37,8 @@ for (l in 1:100){
   }
 }
 plot(1:100,Value_all3,lwd=1,type="l",col="blue")
+which.max(Value_all3)
+which.min(Value_all3)
+
 
 ## 从助教丁傲及同学王超处学习了命令“eval(parse(text=))”
