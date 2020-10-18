@@ -16,3 +16,4 @@ Matrix_muitip <- function(M1,M2){
   M4 <- M1 %*% M2
   print(M4)
 }
+# good work
