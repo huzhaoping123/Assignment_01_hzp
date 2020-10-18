@@ -7,6 +7,7 @@ Value_all <- permutations(3,8,Insert,repeats.allowed=TRUE)
 Value_all1 <- rep(1,6561)
 Value_all2 <- c()
 j = 1
+  # make an explain how you get the number of 6561
 for (ii in 1:6561) {
   for (jj in 1:8) {
     if(Value_all[ii,jj] != " "){
@@ -41,4 +42,4 @@ which.max(Value_all3)
 which.min(Value_all3)
 
 
-## ´ÓÖú½Ì¶¡°Á¼°Í¬Ñ§Íõ³¬´¦Ñ§Ï°ÁËÃüÁî¡°eval(parse(text=))¡±
+## ä»ŽåŠ©æ•™ä¸å‚²åŠåŒå­¦çŽ‹è¶…å¤„å­¦ä¹ äº†å‘½ä»¤â€œeval(parse(text=))â€
