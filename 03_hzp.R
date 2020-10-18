@@ -6,4 +6,9 @@ Pascal_triangle <- function(k){
 }
 Pascal_triangle(100)
 Pascal_triangle(200)
-## ͨ��http://blog.sciencenet.cn/blog-54276-450738.htmlѧϰ�˺���"choose" 
+## Í¨¹ýhttp://blog.sciencenet.cn/blog-54276-450738.htmlÑ§Ï°ÁËº¯Êý"choose" 
+
+# it`s very good to find the sortcut for solving a realistic project
+# but these assignments are conducting for training your coding  capacity and abstract thinking ability
+# I can`t agree with you for completing this work in this way
+# in addition, your answer is wrong.
