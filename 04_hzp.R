@@ -7,19 +7,19 @@ Least_moves <- function(x){
     print(0)
   }
   else{
-    for(i in 2:x){                 ## i ¿ØÖÆÑ­»·µÄ´ÎÊý,Ò²ÊÇx0Ã¿ÁÐµÄÊý×Ö¸öÊý
-      x0 <- combinations(x,i)      ## ÁÐ³öËùÓÐ´Óx¸öÊýÖÐ×éºÏi¸öµÄÑ¡Ôñ
-      for(j in 1:choose(x,i)){     ## ¹²ÓÐchoose(x,i)ÖÖ×éºÏ£¬j¿ØÖÆÐÐÊý   
-        if(x0[j,1] == 1){            ## ¶ÔÓÚx0µÄµÚjÐÐµÚ1ÁÐ£¬ÈôÆäÎª1
-          for(k in 2:i){             ## Ñ¡ÔñÁÐÊý
+    for(i in 2:x){                 ## i æŽ§åˆ¶å¾ªçŽ¯çš„æ¬¡æ•°,ä¹Ÿæ˜¯x0æ¯åˆ—çš„æ•°å­—ä¸ªæ•°
+      x0 <- combinations(x,i)      ## åˆ—å‡ºæ‰€æœ‰ä»Žxä¸ªæ•°ä¸­ç»„åˆiä¸ªçš„é€‰æ‹©
+      for(j in 1:choose(x,i)){     ## å…±æœ‰choose(x,i)ç§ç»„åˆï¼ŒjæŽ§åˆ¶è¡Œæ•°   
+        if(x0[j,1] == 1){            ## å¯¹äºŽx0çš„ç¬¬jè¡Œç¬¬1åˆ—ï¼Œè‹¥å…¶ä¸º1
+          for(k in 2:i){             ## é€‰æ‹©åˆ—æ•°
             if (x0[j,k] != (2*x0[j,k-1]) & x0[j,k] != (x0[j,k-1]+1) ){
               x0[j,k] = 0
             }
-          }                          ## ÈÃ²»ÊÇ+1»òÕß·­±¶µÄÊýÈ«²¿±äÎª0
+          }                          ## è®©ä¸æ˜¯+1æˆ–è€…ç¿»å€çš„æ•°å…¨éƒ¨å˜ä¸º0
           if (x0[j,i] == x){         
             xx[number] = i-1
             number = number + 1 
-            break                    ## ½«ËùÓÐ³ÉÁ¢µÄ²½Êý´¢´æÔÚxxÖÐ
+            break                    ## å°†æ‰€æœ‰æˆç«‹çš„æ­¥æ•°å‚¨å­˜åœ¨xxä¸­
           }
         }
       }
@@ -27,7 +27,7 @@ Least_moves <- function(x){
     print(min(xx))
   }
 }
-## Í¨¹ýhttps://blog.csdn.net/ddd326/article/details/81842360Ñ§Ï°ÁËbreakÃüÁî
+## é€šè¿‡https://blog.csdn.net/ddd326/article/details/81842360å­¦ä¹ äº†breakå‘½ä»¤
 
 Least_moves1 <- function(x){
   i <- 0
@@ -45,3 +45,4 @@ Least_moves1 <- function(x){
   }
   print(i)
 }
+# its good for write this work in two ways, but you`d best put it into two folders
