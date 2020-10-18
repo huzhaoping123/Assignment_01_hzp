@@ -3,6 +3,8 @@ Print_values <- function(a,b,c){
   if(a > b){
     if(b > c){
       print(paste(a,b,c))
+     # “paste” is not suitable,
+     #  using "?paste" in console to make awar of what it means
     }
     else {
       if(a > c){
